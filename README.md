@@ -2,6 +2,7 @@
 
 > [Yeoman](http://yeoman.io) generator
 
+**Note: Page Type Builder plugin don't support the generated plugin yet.**
 
 ## Getting Started
 
