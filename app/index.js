@@ -3,7 +3,7 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 
-var PropertyTypeGenerator = yeoman.generators.Base.extend({
+var PropertyGenerator = yeoman.generators.Base.extend({
   init: function () {
     this.pkg = require('../package.json');
 
@@ -18,23 +18,23 @@ var PropertyTypeGenerator = yeoman.generators.Base.extend({
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay('Welcome to the Property type generator for Page Type Builder for WordPress!'));
+    this.log(yosay('Welcome to the property generator for Page Type Builder for WordPress!'));
 
     var prompts = [
       {
         name: 'propertyName',
-        message: 'What is the name of the property type?',
+        message: 'What is the name of the property?',
         default: 'Kvack'
       },
       {
         name: 'description',
-        message: 'What is the description of the property type?',
+        message: 'What is the description of the property?',
         default: 'This is the most awesome property plugin'
       },
 
       {
         name: 'author',
-        message: 'What is the author\'s name of the property type?',
+        message: 'What is the author\'s name of the property?',
         default: 'You'
       },
     ];
@@ -67,4 +67,4 @@ var PropertyTypeGenerator = yeoman.generators.Base.extend({
   }
 });
 
-module.exports = PropertyTypeGenerator;
+module.exports = PropertyGenerator;

@@ -1,10 +1,10 @@
 {
-  "name": "generator-property-type",
+  "name": "generator-property",
   "version": "0.1.0",
-  "description": "Yeoman generator for property type",
+  "description": "Yeoman generator for property plugin for Page Type Builder for WordPress",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "wp-ptb/generator-property-type",
+  "repository": "wp-ptb/generator-property",
   "author": {
     "name": "Fredrik Forsmo",
     "email": "fredrik.forsmo@gmail.com",
@@ -20,11 +20,11 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "property"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
-    "chalk": "~0.4.0",
     "yosay": "^0.1.0"
   },
   "devDependencies": {

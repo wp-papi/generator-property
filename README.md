@@ -1,4 +1,4 @@
-# generator-property-type [![Build Status](https://secure.travis-ci.org/wp-ptb/generator-property-type.png?branch=master)](https://travis-ci.org/wp-ptb/generator-property-type)
+# generator-property [![Build Status](https://secure.travis-ci.org/wp-ptb/generator-property.png?branch=master)](https://travis-ci.org/wp-ptb/generator-property)
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -8,11 +8,11 @@
 To install generator-property-type from npm, run:
 
 ```bash
-$ npm install -g generator-property-type
+$ npm install -g generator-property
 ```
 
 Finally, initiate the generator:
 
 ```bash
-$ yo property-type
+$ yo property
 ```
