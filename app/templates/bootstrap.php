@@ -11,7 +11,7 @@
 if (!defined('ABSPATH')) exit;
 
 /**
- * Reigster Property <%= propertyName %> to Page Type Builder.
+ * Include Property <%= propertyName %>.
  *
  * @since 1.0.0
  */
