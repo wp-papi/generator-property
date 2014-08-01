@@ -15,4 +15,4 @@ Finally, initiate the generator:
 
 ```bash
 $ yo property-type
-```it 
+```
