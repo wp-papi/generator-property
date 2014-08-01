@@ -1,4 +1,18 @@
-generator-property-type
-======================
+# generator-property-type [![Build Status](https://secure.travis-ci.org/wp-ptb/generator-property-type.png?branch=master)](https://travis-ci.org/wp-ptb/generator-property-type)
 
-Yo generator for creating property type plugin
+> [Yeoman](http://yeoman.io) generator
+
+
+## Getting Started
+
+To install generator-property-type from npm, run:
+
+```bash
+$ npm install -g generator-property-type
+```
+
+Finally, initiate the generator:
+
+```bash
+$ yo property-type
+```
