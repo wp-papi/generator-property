@@ -60,6 +60,8 @@ var PropertyTypeGenerator = yeoman.generators.Base.extend({
     }
   },
 
+  app: function () {},
+
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');
     this.template('class-property-name.php', 'class-property-' + this.propertyName.toLowerCase() + '.php');
