@@ -1,4 +1,4 @@
-property-type-template
+generator-property-type
 ======================
 
-Property type template
+Yo generator for creating property type plugin
