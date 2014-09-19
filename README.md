@@ -1,12 +1,10 @@
-# generator-property [![Build Status](https://secure.travis-ci.org/wp-ptb/generator-property.png?branch=master)](https://travis-ci.org/wp-ptb/generator-property)
+# generator-property [![Build Status](https://secure.travis-ci.org/wp-papi/generator-property.png?branch=master)](https://travis-ci.org/wp-papi/generator-property)
 
 > [Yeoman](http://yeoman.io) generator
 
-**Note: Page Type Builder plugin don't support the generated plugin yet.**
-
 ## Getting Started
 
-To install generator-property-type from npm, run:
+To install generator-property from npm, run:
 
 ```bash
 $ npm install -g generator-property

@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) exit;
  * @version 1.0.0
  */
 
-class Property<%= propertyName %> extends PTB_Property {
+class Property<%= propertyName %> extends Papi_Property {
 
   /**
    * Generate the HTML for the property.
