@@ -1,14 +1,15 @@
 <?php
 
 // Exit if accessed directly
-if (!defined('ABSPATH')) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+  exit;
+}
 
 /**
  * Property <%= propertyName %>
  *
  * @version 1.0.0
  */
-
 class Property<%= propertyName %> extends Papi_Property {
 
   /**
@@ -24,7 +25,7 @@ class Property<%= propertyName %> extends Papi_Property {
     // Database value.
     $value = $this->get_value();
     ?>
-    <input type="text" value="<?php echo $value; ?>" name="<?php echo $options->slug; ?>" />
+    <input type="text" value="<?php echo $value; ?>" name="<?php echo $options->slug; ?>"/>
     <?php
   }
 
@@ -32,7 +33,8 @@ class Property<%= propertyName %> extends Papi_Property {
    * Format the value of the property before we output it to the application.
    *
    * @param mixed $value
-   * @param int   $post_id
+   * @param int $post_id
+   *
    * @since 1.0.0
    *
    * @return mixed
@@ -48,7 +50,8 @@ class Property<%= propertyName %> extends Papi_Property {
     * Update the value of the property before we save it to the database.
     *
     * @param mixed $value
-    * @param int   $post_id
+    * @param int $post_id
+    *
     * @since 1.0.0
     *
     * @return mixed
