@@ -6,19 +6,13 @@ var yosay = require('yosay');
 var PropertyGenerator = yeoman.generators.Base.extend({
   init: function () {
     this.pkg = require('../package.json');
-
-    this.on('end', function () {
-      if (!this.options['skip-install']) {
-        this.installDependencies();
-      }
-    });
   },
 
   askFor: function () {
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay('Welcome to the property generator for Page Type Builder for WordPress!'));
+    this.log(yosay('Welcome to the property generator for Papi!'));
 
     var prompts = [
       {
