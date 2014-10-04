@@ -48,7 +48,7 @@ var PropertyGenerator = yeoman.generators.Base.extend({
       this.description = props.description;
       this.author = props.author;
 
-      this.dirname = 'ptb-property-' + this.propertyName.toLowerCase();
+      this.dirname = 'papi-property-' + this.propertyName.toLowerCase();
 
       done();
     }.bind(this));
