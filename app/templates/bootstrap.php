@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 function include_property_<%= propertyName . toLowerCase() %> () {
-  include_once('class-property-<%= propertyName . toLowerCase() %>.php');
+  include_once('class-papi-property-<%= propertyName . toLowerCase() %>.php');
 }
 
 add_action('papi/include_properties', 'include_property_<%= propertyName . toLowerCase() %>');

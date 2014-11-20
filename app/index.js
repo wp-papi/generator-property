@@ -56,7 +56,7 @@ var PropertyGenerator = yeoman.generators.Base.extend({
 
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');
-    this.template('class-property-name.php', 'class-property-' + this.propertyName.toLowerCase() + '.php');
+    this.template('class-papi-property-name.php', 'class-papi-property-' + this.propertyName.toLowerCase() + '.php');
     this.template('bootstrap.php', 'bootstrap.php');
   }
 });

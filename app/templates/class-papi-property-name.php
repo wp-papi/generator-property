@@ -10,7 +10,25 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @version 1.0.0
  */
-class Property<%= propertyName %> extends Papi_Property {
+class Papi_Property_<%= propertyName %> extends Papi_Property {
+
+	/**
+	 * The default value.
+	 *
+	 * @var int
+	 * @since 1.0.0
+	 */
+	public $default_value = '';
+	/**
+	 * Get default settings.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return array
+	 */
+	public function get_default_settings() {
+		return array();
+	}
 
   /**
    * Generate the HTML for the property.

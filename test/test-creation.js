@@ -20,7 +20,7 @@ describe('property generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
-      'class-property-kvack.php',
+      'class-papi-property-kvack.php',
       'bootstrap.php'
     ];
 
