@@ -41,19 +41,20 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 
 	public function html () {
 		// Property options
-	$options = $this->get_options();
+		$options = $this->get_options();
 
-	// Database value.
-	$value = $this->get_value();
-	?>
-	<input type="text" value="<?php echo $value; ?>" name="<?php echo $options->slug; ?>"/>
-	<?php
+		// Database value.
+		$value = $this->get_value();
+		?>
+			<input type="text" value="<?php echo $value; ?>" name="<?php echo $options->slug; ?>"/>
+		<?php
 	}
 
 	/**
 	* Format the value of the property before we output it to the application.
 	*
 	* @param mixed $value
+	* @param string $slug
 	* @param int $post_id
 	*
 	* @since 1.0.0
@@ -63,7 +64,7 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 
 	// This function is not required since it does this in the base class.
 
-	// public function format_value ($value, $post_id) {
+	// public function format_value ($value, $slug, $post_id) {
 	//	return $value;
 	// }
 
@@ -71,6 +72,7 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	* Update the value of the property before we save it to the database.
 	*
 	* @param mixed $value
+	* @param string $slug
 	* @param int $post_id
 	*
 	* @since 1.0.0
@@ -80,7 +82,7 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 
 	// This function is not required since it does this in the base class.
 
-	// public function update_value ($value, $post_id) {
+	// public function update_value ($value, $slug, $post_id) {
 	//	return $value;
 	// }
 }
