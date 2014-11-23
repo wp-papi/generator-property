@@ -69,16 +69,16 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	// }
 
 	/**
-	* Update the value of the property before we save it to the database.
-	*
-	* @param mixed $value
-	* @param string $slug
-	* @param int $post_id
-	*
-	* @since 1.0.0
-	*
-	* @return mixed
-	*/
+	 * Update the value of the property before we save it to the database.
+	 *
+	 * @param mixed $value
+	 * @param string $slug
+	 * @param int $post_id
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return mixed
+	 */
 
 	// This function is not required since it does this in the base class.
 
