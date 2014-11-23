@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @version 1.0.0
  */
+
 class Papi_Property_<%= propertyName %> extends Papi_Property {
 
 	/**
