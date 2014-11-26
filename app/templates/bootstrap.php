@@ -22,4 +22,4 @@ function include_property_<%= propertyName . toLowerCase() %> () {
   include_once('class-papi-property-<%= propertyName . toLowerCase() %>.php');
 }
 
-add_action('papi/include_properties', 'include_property_<%= propertyName . toLowerCase() %>');
+add_action('papi_include_properties', 'include_property_<%= propertyName . toLowerCase() %>');
