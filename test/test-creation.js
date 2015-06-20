@@ -17,7 +17,26 @@ describe('property generator', function () {
     }.bind(this));
   });
 
-  it('creates expected files', function (done) {
+  it('creates kvack', function (done) {
+    var expected = [
+      // add files you expect to exist here.
+      'class-papi-property-kvack.php',
+      'bootstrap.php'
+    ];
+
+    helpers.mockPrompt(this.app, {
+      'propertyName': 'Kvack',
+      'description': 'Yet another great tool',
+      'author': 'Fredrik'
+    });
+    this.app.options['skip-install'] = true;
+    this.app.run({}, function () {
+      helpers.assertFile(expected);
+      done();
+    });
+  });
+
+  it('creates kvack image', function (done) {
     var expected = [
       // add files you expect to exist here.
       'class-papi-property-kvack-image.php',
@@ -25,7 +44,26 @@ describe('property generator', function () {
     ];
 
     helpers.mockPrompt(this.app, {
-      'propertyName': 'KvackImage',
+      'propertyName': 'Kvack Image',
+      'description': 'Yet another great tool',
+      'author': 'Fredrik'
+    });
+    this.app.options['skip-install'] = true;
+    this.app.run({}, function () {
+      helpers.assertFile(expected);
+      done();
+    });
+  });
+
+  it('creates kvack video', function (done) {
+    var expected = [
+      // add files you expect to exist here.
+      'class-papi-property-kvack-video.php',
+      'bootstrap.php'
+    ];
+
+    helpers.mockPrompt(this.app, {
+      'propertyName': 'KvackVideo',
       'description': 'Yet another great tool',
       'author': 'Fredrik'
     });

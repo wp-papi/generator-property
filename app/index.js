@@ -39,6 +39,7 @@ var PropertyGenerator = yeoman.generators.Base.extend({
       for(var i = 0, l = parts.length; i < l; i++) {
         parts[i] = parts[i].toLowerCase().replace(/^property$/, '');
         parts[i] = parts[i].charAt(0).toUpperCase() + parts[i].slice(1);
+        parts[i] = parts[i].trim();
       }
 
       this.propertyName = parts.join('_');
