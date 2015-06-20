@@ -20,12 +20,12 @@ describe('property generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
-      'class-papi-property-kvack.php',
+      'class-papi-property-kvack-image.php',
       'bootstrap.php'
     ];
 
     helpers.mockPrompt(this.app, {
-      'propertyName': 'Kvack',
+      'propertyName': 'KvackImage',
       'description': 'Yet another great tool',
       'author': 'Fredrik'
     });

@@ -34,15 +34,19 @@ var PropertyGenerator = yeoman.generators.Base.extend({
     ];
 
     this.prompt(prompts, function (props) {
-      this.propertyName = props.propertyName.toLowerCase().replace(/^property$/, '');
-      this.propertyName = this.propertyName.replace(/^(.)|\s(.)/g, function (letter) {
-        return letter.toUpperCase();
-      });
+      var parts = props.propertyName.split(/(?=[A-Z])/);
+
+      for(var i = 0, l = parts.length; i < l; i++) {
+        parts[i] = parts[i].toLowerCase().replace(/^property$/, '');
+        parts[i] = parts[i].charAt(0).toUpperCase() + parts[i].slice(1);
+      }
+
+      this.propertyName = parts.join('_');
 
       this.description = props.description;
       this.author = props.author;
 
-      this.dirname = 'papi-property-' + this.propertyName.toLowerCase();
+      this.dirname = 'papi-property-' + this.propertyName.replace('_', '-').toLowerCase();
 
       done();
     }.bind(this));
@@ -56,7 +60,7 @@ var PropertyGenerator = yeoman.generators.Base.extend({
 
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');
-    this.template('class-papi-property-name.php', 'class-papi-property-' + this.propertyName.toLowerCase() + '.php');
+    this.template('class-papi-property-name.php', 'class-papi-property-' + this.propertyName.replace('_', '-').toLowerCase() + '.php');
     this.template('bootstrap.php', 'bootstrap.php');
   }
 });
