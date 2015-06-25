@@ -1,7 +1,7 @@
 {
   "name": "generator-property",
-  "version": "1.0.8",
-  "description": "Yeoman generator for property plugin for Papi",
+  "version": "2.0.0",
+  "description": "Yeoman generator for property plugin for Papi 2.x",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "wp-papi/generator-property",
