@@ -14,6 +14,6 @@ defined( 'ABSPATH' ) || exit;
  * Include Property <%= propertyName.replace('_', ' ') %>.
  */
 
-add_action('papi/include', function () {
+add_action( 'papi/include', function () {
   require_once 'class-papi-property-<%= propertyName.toLowerCase().replace('_', '-') %>.php';
-});
+} );
