@@ -14,7 +14,6 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	 *
 	 * @var string
 	 */
-
 	// This function is not required since it does this in the base class.
 	//
 	// public $convert_type = 'string';
@@ -24,17 +23,15 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	 *
 	 * @var null
 	 */
-
 	// This function is not required since it does this in the base class.
 	//
-	// public $default_value = null;
+	// public $default_value = '';
 
 	/**
 	 * Get default settings.
 	 *
 	 * @return array
 	 */
-
 	// This function is not required since it does this in the base class.
 	//
 	// public function get_default_settings() {
@@ -44,7 +41,6 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	/**
 	 * Generate the HTML for the property.
 	 */
-
 	public function html () {
 		// Database value.
 		$value = $this->get_value();
@@ -62,11 +58,10 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	 *
 	 * @return mixed
 	 */
-
 	// This function is not required since it does this in the base class.
 	//
 	// public function load_value ($value, $slug, $post_id) {
-	//	return $value;
+	//	return maybe_unserialize( $value );
 	// }
 
 	/**
@@ -78,11 +73,25 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	 *
 	 * @return mixed
 	 */
-
 	// This function is not required since it does this in the base class.
 	//
 	// public function format_value ($value, $slug, $post_id) {
-	//	return $value;
+	//	return maybe_unserialize( $value );
+	// }
+
+	/**
+	 * Import value to the property.
+	 *
+	 * @param  mixed  $value
+	 * @param  string $slug
+	 * @param  int    $post_id
+	 *
+	 * @return mixed
+	 */
+	// This function is not required since it does this in the base class.
+	//
+	// public function import_value( $value, $slug, $post_id ) {
+	//	return maybe_unserialize( $value );
 	// }
 
 	/**
@@ -94,10 +103,9 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	 *
 	 * @return mixed
 	 */
-
 	// This function is not required since it does this in the base class.
 	//
 	// public function update_value ($value, $slug, $post_id) {
-	//	return $value;
+	//	return maybe_unserialize( $value );
 	// }
 }
