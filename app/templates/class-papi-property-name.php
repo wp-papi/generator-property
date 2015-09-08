@@ -41,7 +41,7 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	/**
 	 * Generate the HTML for the property.
 	 */
-	public function html () {
+	public function html() {
 		// Database value.
 		$value = $this->get_value();
 		?>
