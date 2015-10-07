@@ -28,6 +28,22 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	// public $default_value = '';
 
 	/**
+	 * Format the value of the property before it's returned
+	 * to WordPress admin or the site.
+	 *
+	 * @param mixed $value
+	 * @param string $slug
+	 * @param int $post_id
+	 *
+	 * @return mixed
+	 */
+	// This function is not required since it does this in the base class.
+	//
+	// public function format_value ($value, $slug, $post_id) {
+	//	return maybe_unserialize( $value );
+	// }
+
+	/**
 	 * Get default settings.
 	 *
 	 * @return array
@@ -50,36 +66,6 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	}
 
 	/**
-	 * Change value after it's loaded from the database.
-	 *
-	 * @param mixed $value
-	 * @param string $slug
-	 * @param int $post_id
-	 *
-	 * @return mixed
-	 */
-	// This function is not required since it does this in the base class.
-	//
-	// public function load_value ($value, $slug, $post_id) {
-	//	return maybe_unserialize( $value );
-	// }
-
-	/**
-	 * Format the value of the property before we output it to the application.
-	 *
-	 * @param mixed $value
-	 * @param string $slug
-	 * @param int $post_id
-	 *
-	 * @return mixed
-	 */
-	// This function is not required since it does this in the base class.
-	//
-	// public function format_value ($value, $slug, $post_id) {
-	//	return maybe_unserialize( $value );
-	// }
-
-	/**
 	 * Import value to the property.
 	 *
 	 * @param  mixed  $value
@@ -91,6 +77,21 @@ class Papi_Property_<%= propertyName %> extends Papi_Property {
 	// This function is not required since it does this in the base class.
 	//
 	// public function import_value( $value, $slug, $post_id ) {
+	//	return maybe_unserialize( $value );
+	// }
+
+	/**
+	 * Change value after it's loaded from the database.
+	 *
+	 * @param mixed $value
+	 * @param string $slug
+	 * @param int $post_id
+	 *
+	 * @return mixed
+	 */
+	// This function is not required since it does this in the base class.
+	//
+	// public function load_value ($value, $slug, $post_id) {
 	//	return maybe_unserialize( $value );
 	// }
 
